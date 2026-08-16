@@ -34,26 +34,26 @@ latte_price = 3.50
 muffin_price = 2.25
 
 # TODO 1: three lattes
-latte_line = 0
+latte_line = 3 * latte_price
 
 # TODO 2: two muffins
-muffin_line = 0
+muffin_line = 2 * muffin_price
 
 # TODO 3: add the two lines together
-order_total = 0
+order_total = latte_line + muffin_line
 
 print("Latte line:", latte_line)
 print("Muffin line:", muffin_line)
 print("Order total:", order_total)
 
 # TODO 4: 26 muffins boxed by the dozen -- how many are left?
-muffins_left_over = 0
+muffins_left_over = 26 % 12
 print("Muffins left over:", muffins_left_over)
 
 # TODO 5: 2 to the power of 3
-promo_cups = 0
+promo_cups = 2 ** 3
 print("Promo cups:", promo_cups)
 
 # TODO 6: replace each 0 so the sums are worked out by Python
-print("2 + 3 * 5 =", 0)
-print("(2 + 3) * 5 =", 0)
+print("2 + 3 * 5 =", 2 + 3 * 5)
+print("(2 + 3) * 5 =", (2 + 3) * 5)
