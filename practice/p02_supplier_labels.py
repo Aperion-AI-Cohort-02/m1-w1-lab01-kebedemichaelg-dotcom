@@ -30,19 +30,22 @@ bags_label = "12"
 price_label = "3.50"
 
 # TODO 1: repackage bags_label into a whole number
-bags = 0
+bags = int(bags_label)
 
 # TODO 2: repackage price_label into a decimal number
-price_per_bag = 0
+price_per_bag = float(price_label)
+
 
 print("Bags ordered:", bags)
 print("Price per bag:", price_per_bag)
 
 # TODO 3: work out the restock cost (bags times price per bag)
-restock_cost = 0
+#restock_cost = int
+
+restock_cost = int(bags) * float(price_per_bag)
 
 print("Restock cost:", restock_cost)
 
 # TODO 4: finish this line so the number becomes part of the
 #         sentence. Gluing text with + needs text on both sides!
-print("Note for the file: we spent " + "???" + " dollars on beans today")
+print("Note for the file: we spent " + str(restock_cost) + " dollars on beans today")

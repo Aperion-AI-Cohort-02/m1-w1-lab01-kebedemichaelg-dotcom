@@ -34,11 +34,11 @@
 menu = {"latte": 3.50, "espresso": 2.75, "muffin": 2.25}
 
 # TODO 1: look up the two prices BY NAME (not by position!)
-print("Latte costs:", 0)
-print("Espresso costs:", 0)
+print("Latte costs:", menu["latte"])
+print("Espresso costs:", menu["espresso"])
 
-# TODO 2: add "hot chocolate" at 3.25 to the menu
-
+# TODO 2: add "hot chocolate" at 3.25 to the menu 
+menu["hot chocolate"]= 3.25
 # TODO 3: change the muffin price to 2.50
 
 print("Menu now:", menu)
@@ -49,11 +49,12 @@ print("Drinks we sell:", menu)
 sign_up_sheet = ["Sara", "Ben", "Sara", "Aisha", "Ben"]
 
 # TODO 5: how many signatures, and how many different people?
-print("Signatures collected:", 0)
-print("Different members:", 0)
+print("Signatures collected:", len(sign_up_sheet))
+print("Different members:", len(set(sign_up_sheet)))
+
 
 # A printed receipt is a tuple -- set in ink, cannot be changed.
 receipt = ("latte", 3.50, "Sara")
 
 # TODO 6: print just the drink from the receipt
-print("Receipt drink:", receipt)
+print("Receipt drink:", receipt[0])

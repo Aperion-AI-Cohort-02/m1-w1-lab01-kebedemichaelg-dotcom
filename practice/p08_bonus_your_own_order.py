@@ -32,17 +32,18 @@
 
 
 # TODO 1: ask for the customer's name with input()
-name = "Sara"
+name = str(input("what is your name? " ))
 
 # TODO 2: ask what drink they would like
-drink = "Latte"
+drink = str(input("What can I get you? " ))
 
 price = 3.50
 
 print("--- THE COZY BEAN ---")
 
 # TODO 3: greet them by name, with the drink in lower case
-print("Thanks ...! One ... coming up.")
+print(f"Thanks {name}! One {drink} coming up.")
+
 
 # TODO 4: print the total with 2 decimal places, using {price:.2f}
-print("Total: $...")
+print(f"Total: ${price:.2f}")

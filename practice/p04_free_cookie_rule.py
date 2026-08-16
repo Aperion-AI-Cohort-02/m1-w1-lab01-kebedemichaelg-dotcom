@@ -36,10 +36,10 @@ sara_is_member = True
 sara_order = 12.50
 
 # TODO 1: is Sara's order over 10?
-sara_big_order = False
+sara_big_order = sara_order > 10
 
 # TODO 2: does Sara get a cookie? (member AND big order)
-sara_gets_cookie = False
+sara_gets_cookie = sara_is_member and sara_order > 10
 
 print("Sara is a member:", sara_is_member)
 print("Sara has a big order:", sara_big_order)
@@ -58,5 +58,5 @@ print("Ben has a big order:", ben_big_order)
 print("Ben gets a free cookie:", ben_gets_cookie)
 
 # TODO 4: Ben should be invited if he is NOT a member.
-ben_invite = False
+ben_invite = True
 print("Ben should be invited to sign up:", ben_invite)
