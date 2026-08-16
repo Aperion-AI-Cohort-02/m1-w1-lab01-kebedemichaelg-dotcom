@@ -31,21 +31,26 @@
 queue = ["Sara", "Ben", "Aisha", "Marcus", "Priya"]
 
 # TODO 1: print the FIRST person (remember: position 0)
-print("First in line:", queue)
+print("First in line:", queue[0])
+
 
 # TODO 2: print the LAST person
-print("Last in line:", queue)
+print("Last in line:", queue[-1])
 
 # TODO 3: print how many people are waiting
-print("People waiting:", 0)
+print("People waiting:", len(queue))
+
 
 # TODO 4: Sara has been served -- take her out of the queue
 print("After serving Sara:", queue)
 
 # TODO 5: Dev joins the back of the queue
-print("After Dev joins:", queue)
+print("After Dev joins:", queue.remove("Sara"))
 
 # TODO 6: print the next two people to serve, using a slice.
 #         (careful -- Ben is being served right now, so it is
 #          the two AFTER him that we want)
-print("Next two to serve:", queue)
+print("Next two to serve:", queue.append("dev"))
+print("Next two serve:" , queue[1:3])
+
+
